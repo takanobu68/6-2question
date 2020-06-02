@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arrow Function</title>
+</head>
+
+<body>
+	<script>
+		// 定義方法
+
+		// const 定数名 = () =>{
+		// 	 処理内容
+		// };
+
+		// 省略記法
+		// ・関数の引数が一つの時は()を省略できる
+		// ・関数の処理が一つの式である場合は、{}とreturnを省略できる
+
+		const exampleA = (a) => {
+			return a + a;
+		}
+		console.log(exampleA(1));
+
+		// 省略記法
+		const exampleB = a => a + a;
+		console.log(exampleB(1));
+
+		// Reactでよく使うmapの省略記法
+		const arr = [1, 2, 3]
+
+		const result = arr.map(num => num * 2);
+
+		console.log(result); // [2,4,6];
+
+		// アロー関数の特徴
+		// ・名前をつけられない(匿名関数)
+		// ・functionと比べて短く書ける
+		// ・thisが静的(関数の定義時)に決められる
+		// ・アロー関数におけるthisは、
+		//  アロー関数自身の外側のスコープに定義されたもっとも近い関数のthisの値となる
+
+
+	</script>
+</body>
+
+</html>
